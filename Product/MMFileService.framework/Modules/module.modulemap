@@ -1,0 +1,6 @@
+framework module MMFileService {
+  umbrella header "MMFileService-umbrella.h"
+
+  export *
+  module * { export * }
+}
