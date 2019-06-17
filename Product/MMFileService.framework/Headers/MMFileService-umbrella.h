@@ -12,6 +12,7 @@
 
 #import "auto_buffer.h"
 #import "base_tool.h"
+#import "cronjob.h"
 #import "curl_task.h"
 #import "c_curl_task.h"
 #import "http_interceptor_callback.h"
@@ -24,6 +25,7 @@
 #import "key_info.h"
 #import "socket.h"
 #import "thread_pool.h"
+#import "version.h"
 #import "wait_num.h"
 #import "curl.h"
 #import "curlver.h"
@@ -63,6 +65,7 @@
 #import "MSingleton.hpp"
 #import "MUtils.h"
 #import "Runnable.h"
+#import "mdlog.h"
 #import "mmfile_manager.h"
 #import "log_upload.h"
 #import "MMFileLogger.h"

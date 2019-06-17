@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
-namespace mmlog {
+namespace mmslog {
     template<typename T>
     class MSingleton {
     public:

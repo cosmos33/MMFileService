@@ -32,14 +32,16 @@
 #include "ZLibCompress.h"
 #include "log_crypt.h"
 
-namespace mmlog {
+namespace mmslog {
     class LogBuffer {
     public:
-        LogBuffer(void *_pbuffer, size_t _len, bool _is_compress, LogCrypt *logCrypt, bool _is_crypt);
+        LogBuffer(int fd, void *_pbuffer, size_t _len, bool _is_compress, LogCrypt *logCrypt, bool _is_crypt);
 
         ~LogBuffer();
 
     public:
+        int GetFd();
+
         PtrBuffer &GetData();
 
         void Flush(AutoBuffer &_buff);
@@ -67,6 +69,7 @@ namespace mmlog {
         void __Fix();
 
     private:
+        int fd_ = -1;
         PtrBuffer buff_;
         bool is_compress_;
 

@@ -13,10 +13,10 @@
 #include "MMFileInfo.h"
 #include "ILogManager.h"
 
-using namespace mmlog;
+using namespace mmslog;
 class LogUpload;
 
-namespace mmlog {
+namespace mmslog {
 
     using MLock = std::lock_guard<std::mutex>;
     using MRLock = std::lock_guard<std::recursive_mutex>;

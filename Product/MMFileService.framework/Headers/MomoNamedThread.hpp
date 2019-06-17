@@ -15,7 +15,7 @@
 
 // 替换std::thread，支持设置线程名称
 
-namespace mmlog {
+namespace mmslog {
 
     class MomoNamedThread
     {

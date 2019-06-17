@@ -8,7 +8,7 @@
 #include <cstdint>
 #include <functional>
 
-namespace mmlog {
+namespace mmslog {
     static int64_t _RunnableNextId = 0;
 
     /**

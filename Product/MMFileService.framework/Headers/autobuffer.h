@@ -18,7 +18,7 @@
 #include <sys/types.h>
 #include <string.h>
 
-namespace mmlog {
+namespace mmslog {
     class AutoBuffer {
     public:
         enum TSeek {

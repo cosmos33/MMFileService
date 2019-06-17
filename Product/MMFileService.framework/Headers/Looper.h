@@ -9,7 +9,7 @@
 #include <iostream>
 #include "MessageQueue.h"
 
-namespace mmlog {
+namespace mmslog {
 
     class MessageQueue;
 

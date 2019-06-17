@@ -10,7 +10,7 @@
 #include <map>
 #include "ILogManager.h"
 
-namespace mmlog {
+namespace mmslog {
 
     void registerLogManager(const std::string &name, ILogManager *logManager);
 

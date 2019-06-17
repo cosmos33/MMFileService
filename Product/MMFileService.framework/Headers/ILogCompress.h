@@ -8,7 +8,7 @@
 #include "autobuffer.h"
 #include <zconf.h>
 
-namespace mmlog {
+namespace mmslog {
     class ILogCompress {
     public:
         /**

@@ -12,7 +12,7 @@
 #include "MUtils.h"
 #include "Runnable.h"
 
-namespace mmlog {
+namespace mmslog {
 
     static int64_t _HandlerNextId = 0;
 

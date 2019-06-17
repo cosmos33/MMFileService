@@ -15,7 +15,7 @@ class IUpload {
 };
 
 
-namespace mmlog {
+namespace mmslog {
 
 enum LogUploadStrategyType {
     LOGUPLOADSTRATEGYTYPE_15_MINUTES = 15 * 60,

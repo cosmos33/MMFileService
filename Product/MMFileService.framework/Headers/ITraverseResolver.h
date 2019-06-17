@@ -8,7 +8,7 @@
 /**
  * 该接口定义了每个完整数据的回调接口
  */
-namespace mmlog {
+namespace mmslog {
 
     enum ErrorType {
         ZLibError, LogLengthError, NoneError

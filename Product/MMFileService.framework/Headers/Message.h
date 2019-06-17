@@ -18,7 +18,7 @@
  * 2. arg1/arg2: int类型数据
  * 3. obj: 需要传递的数据，不限制类型
  */
-namespace mmlog {
+namespace mmslog {
 
     class Handler;
 

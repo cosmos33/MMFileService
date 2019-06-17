@@ -11,7 +11,7 @@
 #include "MomoNamedThread.hpp"
 #include "Looper.h"
 
-namespace mmlog {
+namespace mmslog {
     using MLock = std::lock_guard<std::mutex>;
     using UNILock = std::unique_lock<std::mutex>;
 

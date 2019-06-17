@@ -9,7 +9,7 @@
 #include "ITraverseResolver.h"
 #include "../base/MMFileInfo.h"
 
-namespace mmlog {
+namespace mmslog {
 
     class MMTraverseResolver : public ITraverseResolver {
     private:

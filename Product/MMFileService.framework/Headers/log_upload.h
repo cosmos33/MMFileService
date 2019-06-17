@@ -8,7 +8,7 @@
 #include "base_tool.h"
 #include "Configuration.h"
 
-namespace mmlog {
+namespace mmslog {
 
 class LogUpload : public base_tool::HttpInterceptor, public std::enable_shared_from_this<LogUpload> {
     public:
@@ -20,6 +20,7 @@ class LogUpload : public base_tool::HttpInterceptor, public std::enable_shared_f
         void Start();
         void Stop();
         void ForceUpload();
+        void CronJobFunc(bool first);
     private:
         time_t last_time_upload;
         std::string url_;
@@ -30,12 +31,14 @@ class LogUpload : public base_tool::HttpInterceptor, public std::enable_shared_f
         std::string device_id_;
         std::thread *thread_; 
         std::shared_ptr<IUpload> upload_;
+        std::shared_ptr<base_tool::CronJob> cronjob;
         int status_;
         void loop();
         std::shared_ptr<base_tool::HttpDispatcher> hd;
         pthread_mutex_t mutex_;
         void Prepare(std::shared_ptr<base_tool::HttpRequest> request) override;
         void Complete(std::shared_ptr<base_tool::HttpResponse> response) override;
+        
 };
 
 };

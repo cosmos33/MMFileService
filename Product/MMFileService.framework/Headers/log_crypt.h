@@ -27,7 +27,7 @@
 #include "autobuffer.h"
 #include "ILogCrypt.h"
 
-namespace mmlog {
+namespace mmslog {
 
     class LogCrypt {
     public:

@@ -10,7 +10,7 @@
 #include <iostream>
 #include <queue>
 
-namespace mmlog {
+namespace mmslog {
 
     template<class N>
     class Node

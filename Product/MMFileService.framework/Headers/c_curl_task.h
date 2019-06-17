@@ -16,10 +16,10 @@ namespace base_tool {
     class CCurlTask : public CurlTask {
         public:
             CCurlTask() {
-                BaseToolLog("CCurlTask() :%p\n", this);
+                BaseToolLogD("CCurlTask() :%p\n", this);
             }
             ~CCurlTask() {
-                BaseToolLog("~CCurlTask() :%p\n", this);
+                BaseToolLogD("~CCurlTask() :%p\n", this);
             }
             std::function<void()> callback_prepare_ = nullptr;
             std::function<void()> callback_complete_ = nullptr;
