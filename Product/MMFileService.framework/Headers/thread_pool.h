@@ -10,10 +10,10 @@ namespace base_tool{
     class Job{ //任务节点
         public:
             Job() {
-                BaseToolLog("Job()\n");
+                BaseToolLogD("Job()\n");
             }
             ~Job() {
-                BaseToolLog("~Job()\n");
+                BaseToolLogD("~Job()\n");
             }
             std::function<void()> callback = NULL;
             Job *next = NULL;

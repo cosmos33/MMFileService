@@ -14,13 +14,15 @@
 //class LogUpload;
 //class MMLogInfo;
 
-namespace mmlog {
+namespace mmslog {
 
 class MMFileManager {
     std::shared_ptr<Configuration> configuration_;
     std::shared_ptr<LogManager> logManager_;
     std::shared_ptr<LogUpload> logUpload_;
 public:
+    MMFileManager();
+    virtual ~MMFileManager();
 
     /*返回值:   成功:   0。
                 失败:   -1001: app_id 为空。
@@ -48,6 +50,7 @@ public:
      *          失败:   -1: business 不存在。
      */
     static int ForceUpload(std::string business);
+    static int ForceUpload_synchronized(std::string business);
 
     /*返回值:   成功:   0。
      *          失败:   -1: business 不存在。
@@ -58,5 +61,7 @@ public:
 };
 
 }
+
+void MMFileBaseToolLogSetLevel(int level);
 #endif //MMLOG_MMFILE_MANAGE_MMFILE_MANAGE_H
 

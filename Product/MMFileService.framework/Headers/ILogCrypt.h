@@ -7,7 +7,7 @@
 
 #include "autobuffer.h"
 
-namespace mmlog {
+namespace mmslog {
     class ILogCrypt {
     public:
         /**

@@ -11,5 +11,6 @@
 #include "log.h"
 #include "socket.h"
 #include "code.h"
-
+#include "version.h"
+#include "cronjob.h"
 #endif //BASE_TOOL_BASE_TOOL_H

@@ -8,7 +8,7 @@
 #include <cstdint>
 #include <functional>
 
-namespace mmlog {
+namespace mmslog {
     int64_t getCurrentTime();
     void getCharArrayFromInt(int val, char *out);
 }

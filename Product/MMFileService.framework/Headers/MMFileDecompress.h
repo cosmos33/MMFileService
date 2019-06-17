@@ -9,7 +9,7 @@
 #include "ITraverseResolver.h"
 #include "../base/autobuffer.h"
 
-namespace mmlog {
+namespace mmslog {
 
 #define VERSION_ONE 1
 #define HEAD_LENGTH_OLD 9

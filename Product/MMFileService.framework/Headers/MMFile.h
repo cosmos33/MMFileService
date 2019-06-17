@@ -8,7 +8,7 @@
 #include <string>
 #include "ILogManager.h"
 
-namespace mmlog {
+namespace mmslog {
 
     ILogManager* getLogManager(const std::string &name);
 

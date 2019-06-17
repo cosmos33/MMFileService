@@ -19,7 +19,7 @@
 #include <sys/mount.h>
 #endif
 
-namespace mmlog {
+namespace mmslog {
 
     extern const long kMaxLogAliveTime;
 

@@ -9,7 +9,7 @@
 #include <mutex>
 #include "Message.h"
 
-namespace mmlog {
+namespace mmslog {
     class MessageObjectPool {
 
     public:

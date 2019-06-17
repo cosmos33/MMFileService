@@ -8,7 +8,7 @@
 #include <zlib.h>
 #include "ILogCompress.h"
 
-namespace mmlog {
+namespace mmslog {
 
     class ZLibCompress : public ILogCompress {
     private:

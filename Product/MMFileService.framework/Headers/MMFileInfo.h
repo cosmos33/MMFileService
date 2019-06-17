@@ -8,7 +8,7 @@
 #include <string>
 #include <list>
 
-namespace mmlog {
+namespace mmslog {
 
     typedef struct MMFileInfo_t {
         std::list<std::string> heads;

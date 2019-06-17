@@ -7,7 +7,7 @@
 
 #include "../base/ILogCrypt.h"
 
-namespace mmlog {
+namespace mmslog {
 
 #define KEY 13
 

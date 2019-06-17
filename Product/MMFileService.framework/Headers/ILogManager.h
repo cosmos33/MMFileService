@@ -10,7 +10,7 @@
 #include "ILogCrypt.h"
 #include "ILogCompress.h"
 
-namespace mmlog {
+namespace mmslog {
 
     class ILogManager {
     public:

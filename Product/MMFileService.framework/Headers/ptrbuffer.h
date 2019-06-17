@@ -22,7 +22,7 @@
 #include <sys/types.h>
 #include <string.h>
 
-namespace mmlog {
+namespace mmslog {
     class PtrBuffer {
     public:
         enum TSeek {
