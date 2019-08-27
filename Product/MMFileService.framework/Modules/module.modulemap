@@ -1,5 +1,5 @@
 framework module MMFileService {
-  umbrella header "MMFileService-umbrella.h"
+  umbrella header "MMFileService.h"
 
   export *
   module * { export * }
