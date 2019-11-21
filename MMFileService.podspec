@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'MMFileService'
-s.version          = '1.1.0'
+s.version          = '1.2.2'
 s.summary          = 'log'
 
 s.description      = <<-DESC
@@ -19,5 +19,4 @@ s.static_framework = true
 s.vendored_frameworks = 'Product/MMFileService.framework'
 s.library = 'z', 'c++'
 
-s.dependency 'openssl-lib'
 end
