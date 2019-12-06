@@ -82,6 +82,9 @@ typedef enum : NSInteger {
 // 默认为第一个business写入log
 - (void)writeBody:(NSString *)body headers:(NSString *)header, ...;
 
+// 默认为第一个business写入log
+- (void)flushWithBusinessName:(NSString *)businessName;
+
 // 关闭Logger
 - (void)closeLogger;
 
