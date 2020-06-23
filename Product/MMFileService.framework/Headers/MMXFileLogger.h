@@ -18,6 +18,9 @@ typedef enum : NSInteger {
     UPLOADSTRATEGYTYPE_24_HOURS      // 24小时上传一次
 } MMXFileUploadStrategyType;
 
+typedef NSString* _Nullable(^MMHostResolveBlock)(NSString *host);
+typedef void(^MMFileResponseStatusBlock)(NSString *host, NSString *resolve, BOOL success);
+
 @class MMXFileLoggerInfo;
 
 @interface MMXFileConfiguration : NSObject
@@ -48,6 +51,12 @@ typedef enum : NSInteger {
 
 // header
 @property (nonatomic, strong) MMXFileLoggerInfo *header;
+
+// dns解析自定义
+@property (nonatomic, strong) MMHostResolveBlock resolveBlock;
+
+// 上传状态
+@property (nonatomic, strong) MMFileResponseStatusBlock responseStatusBlock;
 
 @end
 
